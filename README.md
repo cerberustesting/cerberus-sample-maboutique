@@ -11,7 +11,6 @@ Plan :
 - [ETAPE 3 : Ajout des tests automatiques dans la CI](https://github.com/cerberustesting/cerberus-sample-maboutique#etape-3--ajout-des-tests-automatiques-dans-la-ci).
 
 
-
 \
 &nbsp;
 

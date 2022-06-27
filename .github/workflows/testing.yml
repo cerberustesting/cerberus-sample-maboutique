@@ -1,15 +1,6 @@
 name: Automated Testing only
 
-on:
-  workflow_dispatch:
-    inputs:
-      job:
-        description: 'Job to run.'
-        required: true
-        default: 'deploy'
-
-env:
-  TAG: SanityCheck.${{ github.event.pusher.name }}.${{ github.event.repository.pushed_at}}
+on: [pull_request_target]
 
 jobs:
   run_Tests_UAT:
@@ -23,6 +14,5 @@ jobs:
         host: https://jftl.cerberus-testing.fr
         campaign: SanityCheck
         apikey: ${{ secrets.APIKEY }}
-        author: ${{ github.event.pusher.name }}
+        author: ${{ github.actor }}
         environment: UAT
-        tag: ${TAG}

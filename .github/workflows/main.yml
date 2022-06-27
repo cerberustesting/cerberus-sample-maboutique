@@ -14,8 +14,8 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@master
         with:
           args: >
-            -Dsonar.organization=cerberustesting
-            -Dsonar.projectKey=cerberustesting_cerberus-sample-maboutique
+            -Dsonar.organization=cerberusworkshop12345
+            -Dsonar.projectKey=cerberusworkshop12345_cerberus-sample-maboutique
             -Dsonar.qualitygate.wait=true
             -Dsonar.sources=.
         env:
